@@ -28,3 +28,13 @@ $ npm start
 
 # use the demo.
 At first, open developper console. Then push the button. After a while, you will get the message in developper console.
+
+# ps.
+Set csp in meta:
+```
+    <meta
+            http-equiv="Content-Security-Policy"
+            content="script-src 'self' 'unsafe-inline'; worker-src blob:"
+    />
+// add worker-src blob: to make sure inline worker can run.
+```
